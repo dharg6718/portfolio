@@ -31,12 +31,12 @@ const CustomCursor = () => {
         className="fixed top-0 left-0 w-4 h-4 rounded-full pointer-events-none z-[9999] mix-blend-difference"
         style={{ background: "hsl(186 100% 50%)" }}
         animate={{ x: position.x - 8, y: position.y - 8, scale: isHovering ? 2.5 : 1 }}
-        transition={{ type: "spring", stiffness: 500, damping: 28, mass: 0.5 }}
+        transition={{ type: "spring", stiffness: 1200, damping: 40, mass: 0.2 }}
       />
       <motion.div
         className="fixed top-0 left-0 w-10 h-10 rounded-full pointer-events-none z-[9998] border border-primary/30"
         animate={{ x: position.x - 20, y: position.y - 20, scale: isHovering ? 1.5 : 1 }}
-        transition={{ type: "spring", stiffness: 200, damping: 20, mass: 0.8 }}
+        transition={{ type: "spring", stiffness: 600, damping: 30, mass: 0.3 }}
       />
     </>
   );
